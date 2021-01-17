@@ -57,10 +57,29 @@
 					
 					
 			BRANCHES  
-					git branch branchname   to create then checkout
-					git checkout branchname to get into a branch
-					then git add .   then git commit -m 'message'   then  git push --set-upstream origin branchname  your all set!
+						CREATE AND ADD A NEW BRANCH AND DELETE 	keyword checkout
+					---------------------------------------------------					
+					git branch branchname  -- to create then checkout
+					git checkout branchname -- to get into that a branch
+					then git add .   then git commit -m 'message'   then  git push --set-upstream origin branchname --> your all set!
 					git checkout master back to master..
+					
+					 git branch -->To see all branches 
+					  
+					 to DELETE	1> git checkout branchname   ..you must be inside th branch you want to delete
+					 		2> git branch -d branchname
+							3> git push origin :branchname    .. to delete the branch off github itself not just the command line
+					 
+					------------------------------------------------------------------------------------------------------------------------
+					
+					TO SEE ALL REMOTE BRACHES, AND DELETE A REMOTE!!
+					---------------------------------------------------
+						to see remotes, type	git branch -M main
+					
+					TO REMOVE THE REMOTE: git remote rm nameOfRemote-->  ex. = git remote rm heroku
+					
+					to DELETE BRANCH locally git branch -d nameOfBranch
+					to DELETE branch remotely git push origin --delete nameOfBranch
 			
 			MERGE
 					while in the master branch
@@ -92,13 +111,7 @@
 					or if  someone sends changes to your github repo and you pulll it in
 					
 					
-				TO SEE ALL REMOTE BRACHES, AND DELETE A REMOTE!!
-				to see remotes, type	git branch -M main
-					
-					TO REMOVE THE REMOTE: git remote rm nameOfRemote-->  ex. = git remote rm heroku
-					
-					to DELETE BRANCH locally git branch -d nameOfBranch
-					to DELETE branch remotely git push origin --delete nameOfBranch
+				
 					
 					
 					
