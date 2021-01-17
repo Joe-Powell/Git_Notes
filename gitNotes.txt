@@ -10,7 +10,7 @@
 				just type code .    enter  while in the directory
 			
 		1/  right click on file to bash here and be in directory
-		2/   must do! git init INNITIALIZES GIT REPOSITORY
+		2/   must do! git init --INNITIALIZES GIT REPOSITORY
 
 				git status shows what files are staged 
 				git config --global user.name 'joe powell'
@@ -72,14 +72,13 @@
 					 
 					------------------------------------------------------------------------------------------------------------------------
 					
-					TO SEE ALL REMOTE BRACHES, AND DELETE A REMOTE!!
+					 DELETE A REMOTE ?? needs work
 					---------------------------------------------------
 						to see remotes, type	git branch -M main
 					
 					TO REMOVE THE REMOTE: git remote rm nameOfRemote-->  ex. = git remote rm heroku
 					
-					to DELETE BRANCH locally git branch -d nameOfBranch
-					to DELETE branch remotely git push origin --delete nameOfBranch
+					
 			
 			MERGE
 					while in the master branch
