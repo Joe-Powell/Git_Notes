@@ -57,7 +57,7 @@
 					
 					
 			BRANCHES  
-						CREATE AND ADD A NEW BRANCH AND DELETE 	keyword checkout
+						CREATE, ADD A NEW BRANCH, AND DELETE 	
 					---------------------------------------------------					
 					git branch branchname  -- to create then checkout
 					git checkout branchname -- to get into that a branch
@@ -66,7 +66,8 @@
 					
 					 git branch -->To see all branches 
 					  
-					 to DELETE	1> git checkout branchname   ..you must be inside th branch you want to delete
+					 to DELETE it's kinda opposite because you don't want to be in the same branch
+					 1> git checkout main or master or other branch   ..you can't be inside the same branch your deleting
 					 		2> git branch -d branchname
 							3> git push origin :branchname    .. to delete the branch off github itself not just the command line
 					 
