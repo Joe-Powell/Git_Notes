@@ -111,7 +111,196 @@
 					or if  someone sends changes to your github repo and you pulll it in
 					
 					
-				
+
+	-----------------------------------------------------------------------------------------------------------------------------------------------
+	GIT BASH COMMANDS   & ssh digital ocean
+	----------------------------------------------------------------------------------
+	
+	ls   -> see directories
+	cd / -> see root directory  
+	cd  ->  back to home direcctory
+	cd .. -> back one directory
+	mkdir test -> Creates a folder names test
+	cat -> this is for showing the contents 
+	pwd -> shows what directory your in
+	~ 
+	
+	
+	
+	
+	
+	---------------------------
+	cd test   
+	touch test.txt   makes a file inside that folder
+	---------------------------------------------------
+	
+	Remove folder
+	cd
+	rm -rf test
+	
+	-digital oean tutorial -----------------------------------------------------------------------
+	https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-2
+	
+	change root username
+	
+	best tutorial
+	https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-20-04
+	
+	
+	
+	LOGIN SERVER
+	----------------------------------
+	log into your server in git bash simply enter.. below
+	ssh root@167.99.14.249
+	sudo apt update
+	sudo apt upgrade
+	----------------------------------
+	
+	CREATE NEW USER instead of root
+	
+	adduser joey
+	 password => pword1
+	usermod -aG sudo joey
+	exit then login with new user
+
+	ssh joey@167.99.14.249
+	joey@167.99.14.249: Permission denied (publickey). denied because
+	when we added the public key it was added to the root user. 
+	so log back in as root
+	ssh root@167.99.14.249
+	 cd /home/joey
+	 mkdir .ssh
+	 cd .ssh
+	 touch authorized_keys				public keys go inside authorized_keys file
+	 to grab keys open another terminal
+	 cat .ssh/id_rsa
+	 cd c/users/joseph
+	 cat .ssh/id_rsa.pub  copy keys
+	 then back to main terminal
+	 sudo nano authorized_keys
+	 past in keys 
+	 ctrl x
+	 y  enter
+	 cat authorized_keys   to see whats inside there
+	 exit
+	 ssh joey@167.99.14.249
+	 all good!
+	 
+	 
+		Disable the Password for Root or username joey Login -> now nobody can login with password,only ssh key
+		sudo nano /etc/ssh/sshd_config
+		pword1
+		then scroll down had to stretch the commandline ...
+		or click insie then use arrow key to go down..
+		PermitRootLogin no
+		ctrl x
+		y enter
+		sudo systemctl reload sshd.service
+		
+		
+		ssh for github ........wht a mess here
+		---------------
+		$ ssh-keygen -t rsa   while in server
+		
+		sudo chown -R joey:joey /home/joey	to make it in joey not root...... see video 42:00 ish  not in the github
+		ssh-keygen -t rsa		again because failed
+		 ls .ssh
+		 git clone git@github.com:bradtraversy/react_otka_auth.git
+		 ls
+		 cd into the clone and install these below
+		 sudo apt install nodejs
+		 sudo apt install npm
+		 
+
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+		how to clode from github tutorial DigitalOcean
+		https://www.digitalocean.com/community/cheatsheets/how-to-use-git-a-reference-guide
+		
+		Brad Traverseys Guide
+		https://gist.github.com/bradtraversy/f03df587f2323b50beb4250520089a9e
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 ===NOT SURE ABOUT THIS ====
+	 Copy folder or file from machine to server
+	scp files.zip remote_username@IP-ADDRESS:/remote/directory/tocopy
+	
+	scp ~/test.txt joe@104.131.191.249:~
+	ls
+
+
+	--------------------------------------------------------------------------------------------------------------------------------
+	
+	
+	
+
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
 					
 					
 					
