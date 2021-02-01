@@ -271,9 +271,31 @@
 	
 
 					
+	==================HOST A REACT PROJECT WITH BUILD
+----------------------------------------------------------------------------------------------------------------------------------------
+#1 name of domain and folder its in if a subdomain.. under version in package.json
+		"homepage": "http://joe-powell.com/portfolio-react",
+		
+		
+		
+#2  ctrl c then in directory npm run build..  delete old build if exists
+
+
+
+#3  then find that BUILD folder which is inside the folder on your computer of the project itself,
+ go inside right click it and select all the
+files and folders inside DO NOT turn the build folder itself into a zip...
+ right click below files hold in and highlight all files and folders, 
+then release right click and send to zip.
+and find SEND TO, then select COMPRESSED ZIP FOLDER. 
+you can call that new folder build or whatever you want to name it.
+so right click and sent to, then select compressed zip folder.
+so it's just the build itself that does it...
+
+#4 then go to hosting and find the folder you want to upload it to, choose upload,
+then pick that zip folder and upload it inside the folder, go to folder, right click on the zip and extract the zip, delete the zip then	
 					
-					
-					
+===================================================================================================================================================					
 					
 					
 					
