@@ -121,11 +121,27 @@
 	cd  ->  back to home direcctory
 	cd .. -> back one directory
 	mkdir test -> Creates a folder names test
-	cat -> this is for showing the contents 
+	touch  -> makes a file
+	rm -> delete a file   rm file1.txt 
+	rmdir -> remove a directory    rmdir dir2
+	rm -R dir2     ->  if directory has files inside it
+	cat -> this is for showing the contents within a file
+	less -> shows file only, q to exit..
 	pwd -> shows what directory your in
-	~ 
+	~ -> from home directory
+	clear  -> clears terminal
 	
+	nano -> commandline text editor   nano gitNotes.txt 
+	ctrl x to exit nano
+	mv -> rename a file     mv file1.txt file2.txt
+	cp -> to copy a file   cp file2.txt filenameOfCopy.txt  
+	cat filenameOfCopy.txt   spits out contents to see
 	
+	copy to other locations
+	cp file1.txt ~/dir2/file3.txt
+	which -> searches for file or folder location location
+	which mongod    // /usr/bin/mongod
+	sudo when not logged in as root user
 	
 	
 	
